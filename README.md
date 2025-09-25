@@ -42,6 +42,35 @@ Automatización de lectura y procesamiento de facturas en Excel usando Python.
 
 Me interesa colaborar en proyectos que combinen tecnología, análisis y automatización, la madurez y el compromiso profesional.
 
+# 📊 Análisis de Datos de Ventas con Python
+
+Este proyecto muestra cómo realizar un análisis exploratorio de datos de ventas utilizando Python. Se incluyen procesos de limpieza, visualización y generación de insights clave para la toma de decisiones.
+
+## 📦 Estructura del proyecto
+
+- `data/ventas.csv`: Datos simulados de ventas por producto, región y fecha.
+- `notebooks/analisis_ventas.ipynb`: Notebook con análisis paso a paso.
+- `src/limpieza_datos.py`: Script para limpiar y preparar los datos.
+
+## 🛠️ Tecnologías utilizadas
+
+- Python
+- Pandas
+- Matplotlib
+- Jupyter Notebook
+
+## 🎯 Objetivos del análisis
+
+- Identificar productos más vendidos
+- Analizar ventas por región y mes
+- Detectar tendencias y estacionalidad
+
+## 🧪 Cómo usar este proyecto
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/jubior777/ventas-python-analisis.git
+
 ---
 
 ## 📫 Contacto
