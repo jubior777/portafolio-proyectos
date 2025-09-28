@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard de Inventario</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h2>Valor total por categoría</h2>
+  <canvas id="graficoInventario" width="600" height="400"></canvas>
+
+  <script>
+    fetch('../assets/inventario.json')
+      .then(res => res.json())
+      .then(data => {
+        const labels = data.map(item => item.categoria);
+        const valores = data.map(item => item.valor_total);
+
+        new Chart(document.getElementById('graficoInventario'), {
+          type: 'bar',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Valor total',
+              data: valores,
+              backgroundColor: 'rgba(54, 162, 235, 0.6)'
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              title: {
+                display: true,
+                text: 'Inventario por categoría'
+              }
+            }
+          }
+        });
+      });
+  </script>
+</body>
+</html>
